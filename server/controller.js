@@ -1,45 +1,45 @@
-const houses = require('./db.json');
+const visions = require('./db.json');
 let globalId = 4;
 
 module.exports = {
  
-    getHouses: (req,res) => {
-        res.status(200).send(houses);
+    getVisions: (req,res) => {
+        res.status(200).send(visions);
     },
  
     deleteHouse: (req,res) => {
-        let houseIndex = houses.findIndex((house) => house.id === +req.params.id);
-        houses.splice(houseIndex,1);
-        res.status(200).send(houses);
+        let visionIndex = visions.findIndex((vision) => vision.id === +req.params.id);
+        visions.splice(visionIndex,1);
+        res.status(200).send(visions);
     },
  
     createHouse: (req,res) => {
-        let { address, price, imageURL } = req.body
-        let newHouse = {
+        let { title, countdown, imageURL } = req.body
+        let newVision = {
             id: globalId,
-            address,
-            price,
+            title,
+            countdown,
             imageURL
         }
-        houses.push(newHouse)
-        res.status(200).send(houses)
+        visions.push(newVision)
+        res.status(200).send(visions)
         globalId++
     },
  
-    updateHouse: (req,res) => {
+    updateVision: (req,res) => {
         let { id } = req.params;
         let { type } = req.body;
-        let index = houses.findIndex(house => +house.id === +id )
+        let index = visions.findIndex(vision => +vision.id === +id )
 
-        if (houses[index].price <= 10000 && type === 'minus') {
-            houses[index].price = 0
-            res.status(200).send(houses)
+        if (visions[index].countdown <= 5 && type === 'minus') {
+            visions[index].countdown = 0
+            res.status(200).send(visions)
         } else if (type === 'plus') {
-            houses[index].price += 10000
-            res.status(200).send(houses)
+            visions[index].countdown += 5
+            res.status(200).send(visions)
         } else if (type === 'minus') {
-            houses[index].price -= 10000
-            res.status(200).send(houses)
+            visions[index].countdown -= 5
+            res.status(200).send(visions)
         } else {
             res.sendStatus(400)
         }

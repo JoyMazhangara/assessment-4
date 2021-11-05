@@ -1,20 +1,20 @@
 [
     {
       "id": 1,
-      "address": "1600 Pennsylvania Avenue NW",
-      "price": 290000,
-      "imageURL" : "https://www.washingtonian.com/wp-content/uploads/2020/07/Official-White-House-Photo-by-Andrea-Hanks-1.jpg"
+      "title": "Finishing school semester strong",
+      "countdown": 10,
+      "imageURL" : "http://cminsure.com/wp-content/uploads/ContentImage-GradeAPlus.jpg-550x0-300x225.jpg"
     },
     {
       "id": 2,
-      "address": "London SW1A 1AA",
-      "price": 454615,
-      "imageURL" : "https://cdn.londonandpartners.com/asset/buckingham-palace-buckingham-palace-photographer-andrew-holt-ba2d2924f687e5713154dbf611c103e1.jpg"
+      "title": "Trip to Greece",
+      "countdown": 15,
+      "imageURL" : "https://cdn.cnn.com/cnnnext/dam/assets/170606121035-greece---travel-destination---shutterstock-560829934.jpg"
     },
     {
       "id": 3,
-      "address": "Taj Road",
-      "price": 169000,
-      "imageURL" : "https://robbreport.com/wp-content/uploads/2013/06/831971.jpg?w=943"
+      "title": "Get Fit Challenge",
+      "countdown": 30,
+      "imageURL" : "https://www.24hourfitness.com/content/dam/24-hour-fitness/home/featured-programs/Studio-Classes.jpg"
     }
   ]
