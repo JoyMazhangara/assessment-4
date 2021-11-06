@@ -51,7 +51,7 @@
     background-color: snow;
   }
   
-  #price-container {
+  #countdown-container {
     width: 85%;
   }
   
@@ -62,21 +62,21 @@
     align-items: center;
   }
   
-  #houses-container {
+  #visions-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
   
-  .house-cover-image {
+  .vision-cover-image {
     width: 300px; 
     height: 300px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
   
-  .house-card {
+  .vision-card {
     background-color: turquoise;
     width: 300px;
     margin: 20px; 
@@ -88,12 +88,12 @@
     border-top-right-radius: 15px;
   }
   
-  .house-address {
+  .vision-title {
     font-size: 18px;
     margin: 5px 0;
   }
   
-  .house-price {
+  .vision-countdown {
     font-size: 15px;
     margin: 5px 0;
   }

@@ -1,7 +1,7 @@
 const visionsContainer = document.querySelector('#visions-container')
 const form = document.querySelector('form')
 
-const baseURL = `http://localhost:4000/api/vision`
+const baseURL = `http://localhost:4000/api/visions`
 
 const visionsCallback = ({ data: visions }) => displayVisions(visions)
 const errCallback = err => console.log(err.response.data)
@@ -33,7 +33,7 @@ function submitHandler(e) {
 
 function createVisionCard(vision) {
     const visionCard = document.createElement('div')
-    visionCard.classList.add('house-card')
+    visionCard.classList.add('vision-card')
 
     visionCard.innerHTML = `<img alt='vision cover image' src=${vision.imageURL} class="vision-cover-image"/>
     <p class="title">${vision.title}</p>

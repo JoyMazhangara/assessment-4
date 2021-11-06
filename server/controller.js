@@ -7,13 +7,13 @@ module.exports = {
         res.status(200).send(visions);
     },
  
-    deleteHouse: (req,res) => {
+    deleteVision: (req,res) => {
         let visionIndex = visions.findIndex((vision) => vision.id === +req.params.id);
         visions.splice(visionIndex,1);
         res.status(200).send(visions);
     },
  
-    createHouse: (req,res) => {
+    createVision: (req,res) => {
         let { title, countdown, imageURL } = req.body
         let newVision = {
             id: globalId,

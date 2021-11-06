@@ -39,11 +39,11 @@ app.get("/api/fortune", (req, res) => {
 });
 
 const ctrl = require('./controller');
-const { getHouses, deleteHouse, createHouse, updateHouse} = ctrl
+const { getVisions, deleteVision, createVision, updateVision} = ctrl
  
-app.get('/api/houses', getHouses)
-app.delete('/api/houses/:id', deleteHouse)
-app.post('/api/houses', createHouse)
-app.put('/api/houses/:id', updateHouse)
+app.get('/api/visions', getVisions)
+app.delete('/api/visions/:id', deleteVision)
+app.post('/api/visions', createVision)
+app.put('/api/visions/:id', updateVision)
 
 app.listen(4000, () => console.log("Server running on 4000"));
