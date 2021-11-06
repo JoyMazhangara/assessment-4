@@ -5,7 +5,7 @@
   }
   
   body {
-    background-color: rgb(153, 84, 37);
+    background-color: rgb(185, 102, 46);
   }
   
   header {
@@ -34,7 +34,7 @@
   }
   
   button {
-    background-color: #9c7937;
+    background-color: #c59a4a;
     width: 75px;
     height: 25px;
     color: snow;
@@ -43,7 +43,7 @@
   }
 
   div > button {
-    background-color: #9c7937;
+    background-color: #c59a4a;
     width: 150px;
     height: 25px;
     color: snow;
@@ -86,7 +86,7 @@
   }
   
   .vision-card {
-    background-color: #9c7937;
+    background-color: #c59a4a;
     width: 300px;
     margin: 20px; 
     display: flex;

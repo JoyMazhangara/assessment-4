@@ -39,7 +39,7 @@ function createVisionCard(vision) {
     <p class="title">${vision.title}</p>
     <div class="btns-container">
         <button onclick="updateVision(${vision.id}, 'minus')">-</button>
-        <p class="vision-countdown">$${vision.countdown}</p>
+        <p class="vision-countdown">${vision.countdown} days</p>
         <button onclick="updateVision(${vision.id}, 'plus')">+</button>
     </div>
     <button onclick="deleteVision(${vision.id})">delete</button>
