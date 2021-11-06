@@ -5,7 +5,7 @@
   }
   
   body {
-    background-color: snow;
+    background-color: rgb(153, 84, 37);
   }
   
   header {
@@ -13,7 +13,7 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
-    color: darkslategray;
+    color: snow;
   }
   
   main {
@@ -34,19 +34,19 @@
   }
   
   button {
-    background-color: #232323;
+    background-color: #9c7937;
     width: 75px;
     height: 25px;
-    color: turquoise;
+    color: snow;
     border: none;
     margin: 5px;
   }
 
   div > button {
-    background-color: #232323;
+    background-color: #9c7937;
     width: 150px;
     height: 25px;
-    color: turquoise;
+    color: snow;
     border: none;
     margin: 5px;
   }
@@ -86,7 +86,7 @@
   }
   
   .vision-card {
-    background-color: turquoise;
+    background-color: #9c7937;
     width: 300px;
     margin: 20px; 
     display: flex;
